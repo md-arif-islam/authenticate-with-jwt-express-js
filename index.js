@@ -5,6 +5,7 @@ const userHandler = require("./routeHandler/userHandler");
 // Express app init
 const app = express();
 app.use(express.json());
+require("dotenv").config();
 
 // Database connection with mongoose
 mongoose.set("strictQuery", false);
